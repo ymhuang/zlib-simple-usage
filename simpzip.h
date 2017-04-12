@@ -1,3 +1,6 @@
+#ifndef _SIMPZIP_H
+#define _SIMPZIP_H
+
 typedef enum _filetype_e
 {
         FILETYPE_NONE = 0
@@ -16,3 +19,5 @@ typedef struct _filelist_t
 extern bool ListFileInDir( char * path, filelist_t * filelist );
 extern bool ReadFileData( char * path, char ** content, unsigned long * size );
 extern bool ArchiveZip( char * zipPath, char * file, char * password );
+
+#endif /* _SIMPZIP_H */
